@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity(), SearchContract.View {
     }
 
     //Hard-coded array
-    var words = arrayOf("Paris", "NYC", "streetwear", "fashion", "art","contemporary")
+    var words = arrayOf("NYC", "streetwear", "fashion", "art","contemporary")
 
     //Picks a random word from array
     private fun randomWord(a: Array<String>): String {
