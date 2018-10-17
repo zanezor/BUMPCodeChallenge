@@ -12,7 +12,7 @@ object GiphyAPI {
 
     private var retrofit: Retrofit
     private const val BASE_URL = "http://api.giphy.com"
-    const val GIPHY_API_KEY = "PASTE_API_KEY_HERE"
+    const val GIPHY_API_KEY = "888yp8aNQ1R5sgWjsfHjykz57TOaoUUX"
 
     init {
         val okHttpClient = OkHttpClient.Builder()
