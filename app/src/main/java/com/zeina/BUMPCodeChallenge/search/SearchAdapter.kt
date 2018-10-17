@@ -41,12 +41,12 @@ class SearchAdapter(private var searches: SearchModel, private val context: Cont
 
             Glide.with(itemView?.context)
                     .asGif()
-                    .load(data.images.fixed_height.url)
+                    .load(data.images.fixed_height_downsampled.url)
                     .apply(RequestOptions()
                             .diskCacheStrategy(DiskCacheStrategy.ALL)
                             .placeholder(ColorDrawable(ContextCompat.getColor(itemView.context, R.color.colorWhite)))
                             .centerCrop())
-                    .transition(DrawableTransitionOptions.withCrossFade(android.R.anim.fade_in, 200))
+                    .transition(DrawableTransitionOptions.withCrossFade(0))
                     .into(itemView.gif_image)
         }
     }

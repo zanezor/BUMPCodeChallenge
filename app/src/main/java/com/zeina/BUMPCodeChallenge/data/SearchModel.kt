@@ -6,7 +6,7 @@ data class SearchModel(var data:List<Data>, val pagination: Pagination)
 
 data class Data(val slug:String, val images: Images)
 
-data class Images(val fixed_width: FixedWidthImage, val fixed_height: FixedHeightImage, val original: OriginalImage)
+data class Images(val fixed_width_downsampled: FixedWidthImage, val fixed_height_downsampled: FixedHeightImage, val original: OriginalImage)
 
 data class FixedWidthImage(val url:String, val width:Int, val height:Int)
 

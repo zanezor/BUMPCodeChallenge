@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), SearchContract.View {
     private var visibleItemCount: Int = 0
     private var totalItemCount: Int = 0
     private var previousTotal: Int = 0
-    private var viewThreshold: Int = 5
+    private var viewThreshold: Int = 15
 
     private lateinit var listAdapter: SearchAdapter
     private lateinit var gridLayoutManager: GridLayoutManager
